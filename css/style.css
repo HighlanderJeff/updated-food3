@@ -47,7 +47,7 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 	
-	background-image: url(smallShips.png);	
+	background-image: url(cupcakes1.jpg);	
 	animation: slide 30s infinite;
 }
 
@@ -440,7 +440,7 @@ p{
 		background-position:center top;
 		margin-left:5%;
 		
-		background-image: url(smallShips.png);	
+		background-image: url(cupcakes1.jpg);	
 		animation: slide 30s infinite;
 	}
 	#content table{
@@ -481,7 +481,7 @@ p{
 		
 		margin-left:0;
 		
-		background-image: url(smallShips.png);	
+		background-image: url(cupcakes1.jpg);	
 		animation: slide 30s infinite;
 	}
 	.gride-container {
@@ -534,7 +534,7 @@ p{
 		
 		margin-left:0;
 		
-		background-image: url(smallShips.png);	
+		background-image: url(cupcakes1.jpg);	
 		animation: slide 30s infinite;
 	}
 	.gride-container {
@@ -587,7 +587,7 @@ p{
 		
 		margin-left:0;
 		
-		background-image: url(smallShips.png);	
+		background-image: url(cupcakes1.jpg);	
 		animation: slide 30s infinite;
 	}
 	.gride-container {
@@ -639,7 +639,7 @@ p{
 		
 		margin-left:0;
 		
-		background-image: url(smallShips.png);	
+		background-image: url(cupcakes1.jpg);	
 		animation: slide 30s infinite;
 	}
 	.gride-container {
