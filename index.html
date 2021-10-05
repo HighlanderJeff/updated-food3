@@ -1,78 +1,93 @@
+
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-div.gallery {
-  border: 1px solid #ccc;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-</style>
-</head>
-<body>
-
-<h2>Responsive Image Gallery</h2>
- <img src="css/food.jpg" class="w3-image" style="width:100%">
-<div class="gallery">
-    <a target="_blank" href="css/food.jpg">
-      <img src="css/food.jpg" alt="Cinque Terre" width="600" height="400">
-    </a>
-<div class="desc">Add a description of the image here</div>
-
-<h4>Resize the browser window to see the effect.</h4>
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="css/food.jpg">
-      <img src="css/food.jpg" alt="Cinque Terre" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
-  </div>
-</div>
-
-
-</body>
+	<head>
+		<meta charset="utf-8">
+		<title>testing stuff</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<style>
+			.footer {
+			   position: fixed;
+			   left: 0;
+			   bottom: 0;
+			   
+			   width: 100%;
+			   background-color: gray;
+			   color: white;
+			   text-align: center;
+			}
+			
+			}
+		</style>
+	</head>
+	<body>
+	<!-- Links (sit on top) -->
+		<div class="w3-top">
+		  <div class="w3-row w3-padding w3-red">
+			<div class="w3-col s3" style="width:33%">
+			  <a href="#"  class="w3-button w3-block w3-red w3-mobile" >HOME</a>
+			</div>
+			<div class="w3-col s3" style="width:33%">
+			  <a href="#header"  class="w3-button w3-block w3-red w3-mobile" >MENU</a>
+			</div>
+			<div class="w3-col s3" style="width:33%">
+			  <a href="#contact"  class="w3-button w3-block w3-red w3-mobile" >CONTACT</a>
+			</div>
+			</div>
+		</div><br>
+	
+	
+		<div class="section-top">
+			
+		</div>
+		<div id="header" style="padding-top:30px;">
+				<h1>
+					<br>Welcome to the Happy Inn
+					<br>Our menu presents for all tastes Cantonese,
+					<br>Pekinese, Sze Chuan and traditional cuisine,
+					<br>we hope you enjoy your meal
+				</h1>
+		</div>
+		
+		
+				<!-- Contact/Area Container -->
+		<div class="w3-container" id="contact" style="padding-top:60px;padding-bottom:60px;">
+		  <div class="w3-content" style="max-width:700px">
+			<h3>WHERE TO FIND US</h3>
+			<br>
+			 <img src="css/food.jpg" class="w3-image" style="width:100%">
+			 <br><br>
+			<strong>6 Union Road<br>Grangemouth
+								<br>FK3 8AB
+								<br>Orders taken by phone
+								<br>Deliveries 5PM - 10PM
+								<br>Deliveries in Grangemouth £2.00<br><br>01324 483098
+								<br>Join us on  
+								<a href="https://www.facebook.com/chinesefood00/">
+									Facebook</a>
+							</strong><br><br>
+								
+							<p4>
+								
+								<iframe 
+									src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8919.776861014318!2d-3.7231723!3d56.0196386!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa3d572b8dc0b5cb5!2sHappy+Inn!5e0!3m2!1sen!2suk!4v1563276179202!5m2!1sen!2suk" 
+									frameborder="0" style="border:0" height="100%" width="100%" allowfullscreen>
+								</iframe>
+								
+							</p4>
+					</div>
+		  </div>
+		<div class="footer w3-padding-10">
+			<p1>
+				<strong>
+					Follow us on:
+					<a id="location;" href="https://www.facebook.com/whisked.awayxo" target="_blank">
+						Facebook
+					</a>
+				</strong>
+			</p1>
+		</div>	
+	</body>
+						
 </html>
-
-
