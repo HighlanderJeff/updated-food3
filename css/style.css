@@ -83,13 +83,13 @@ p{
 	
 	0%{
 		
-		background-image: url(smallShips.png);	
+		background-image: url(cupcakes1.jpg);	
 	}
 	30%{
-		background-image: url(food.jpg);
+		background-image: url(cupcakes2.jpg);
 	}
 	50%{
-		background-image: url(image3.jpg);
+		background-image: url(cupcakes3.jpg);
 	}
 }
 
