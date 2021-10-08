@@ -47,3 +47,10 @@ div.gallery img:hover{
     column-count:         1;
    }
 }
+@media (max-width: 200px) {
+   .gallery {
+    -moz-column-count:    1;
+    -webkit-column-count: 1;
+    column-count:         1;
+   }
+}
