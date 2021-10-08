@@ -18,28 +18,28 @@
    
    .footer {
 	
-		font-size: 150%;
+		font-size: 450%;
 	}
 }
 @media (max-width: 3000px) {
    
    .footer {
 	
-		font-size: 150%;
+		font-size: 300%;
 	}
 }
 @media (max-width: 2500px) {
    
    .footer {
 	
-		font-size: 150%;
+		font-size: 250%;
 	}
 }
 @media (max-width: 2000px) {
    
    .footer {
 	
-		font-size: 150%;
+		font-size: 200%;
 	}
 }
 
@@ -47,7 +47,7 @@
    
    .footer {
 	
-		font-size: 150%;
+		font-size: 175%;
 	}
 }
 
@@ -61,7 +61,7 @@
 @media (max-width: 1000px) {
   .footer {
 	
-		font-size: 100%;
+		font-size: 125%;
 	}
 }
 @media (max-width: 800px) {
@@ -73,7 +73,7 @@
 @media (max-width: 400px) {
    .footer {
 	
-		font-size: 100%;
+		font-size: 75%;
 	}
 }
 @media (max-width: 200px) {
