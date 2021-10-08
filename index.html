@@ -1,19 +1,231 @@
+
 <!DOCTYPE html>
-
 <html>
-<head>
-        <title>Images both big and small</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
-        <link rel="stylesheet" type="text/css" href="style.css">
-        
+	<head>
+		<meta charset="utf-8">
+		<title>testing stuff</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<style>
+			.footer {
+			   position: fixed;
+			   left: 0;
+			   bottom: 0;
+			   
+			   width: 100%;
+			   background-color: gray;
+			   color: white;
+			   text-align: center;
+			}
+			
+			}
+		</style>
+<!-- below imported from w3schools -->
+		<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
 
-</head>
-<body>
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
 
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 70%;
+  width: auto;
+  padding: 16px;
+  <!-- this margin was originally -22px -->
+  margin-top: -2px;
+  color: white;
+  background-color:grey;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 10px 10px 0;
+  user-select: none;
+}
 
-    <div class="gallery">        
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+<!-- above imported from w3schools -->
+	</head>
+	<body>
+	<!-- Links (sit on top) -->
+		<div class="w3-top">
+		  <div class="w3-row w3-padding w3-red">
+			<div class="w3-col s3" style="width:33%">
+			  <a href="#"  class="w3-button w3-block w3-red w3-mobile" >HOME</a>
+			</div>
+			<div class="w3-col s3" style="width:33%">
+			  <a href="#header"  class="w3-button w3-block w3-red w3-mobile" >MENU</a>
+			</div>
+			<div class="w3-col s3" style="width:33%">
+			  <a href="#contact"  class="w3-button w3-block w3-red w3-mobile" >CONTACT</a>
+			</div>
+			</div>
+		</div><br>
+	
+	<!-- test section imported from w3schools ** start** -->
+	
+		<div class="slideshow-container">
+
+		<div class="mySlides fade">
+			  <div class="numbertext">1 / 4</div>
+				<img src="img/cupcakes1.jpg" style="width:100%">
+			  <div class="text">Caption Text</div>
+		</div>
+
+		<div class="mySlides fade">
+			  <div class="numbertext">2 / 4</div>
+				<img src="img/cupcakes2.jpg" style="width:100%">
+			  <div class="text">Caption Two</div>
+		</div>
+
+		<div class="mySlides fade">
+			  <div class="numbertext">3 / 4</div>
+				<img src="img/cupcakes3.jpg" style="width:100%">
+			  <div class="text">Caption Three</div>
+		</div>
+
+		<div class="mySlides fade">
+			  <div class="numbertext">4 / 4</div>
+				<img src="img/cupcakes4.jpg" style="width:100%">
+			  <div class="text">Caption four</div>
+		</div>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		</div>
+		<br>
+
+		<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+
+		<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1}    
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+				  slides[i].style.display = "none";  
+			  }
+			  for (i = 0; i < dots.length; i++) {
+				  dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " active";
+			}
+		</script>
+	
+	
+	<!-- test section imported from w3schools ** end** -->
+		<div id="header" style="padding-top:30px;">
+				<h1>
+					<br>Welcome to the Happy Inn
+					<br>Our menu presents for all tastes Cantonese,
+					<br>Pekinese, Sze Chuan and traditional cuisine,
+					<br>we hope you enjoy your meal
+				</h1>
+		</div>
+		
+		
+				<!-- Contact/Area Container -->
+		<div class="w3-container" id="contact" style="padding-top:60px;padding-bottom:60px;">
+		  <div class="w3-content" style="max-width:700px">
+			<h3>WHERE TO FIND US</h3>
+			<br>
+			     <div class="gallery">        
         <a href="images/cupcakes1.jpg"><img src="images/cupcakes1-small.jpg"></a><!--1-->
         <a href="images/cupcakes2.jpg"><img src="images/cupcakes2-small.jpg"></a><!--2-->
         <a href="images/cupcakes3.jpg"><img src="images/cupcakes3-small.jpg"></a><!--3-->
@@ -33,6 +245,37 @@
         <a href="images/cupcakes17.jpg"><img src="images/cupcakes17-small.jpg"></a><!--17-->
         <a href="images/cupcakes18.jpg"><img src="images/cupcakes18-small.jpg"></a><!--18-->
     </div>
-
-</body>
-</html> 
+			 <br><br>
+			<strong>6 Union Road<br>Grangemouth
+								<br>FK3 8AB
+								<br>Orders taken by phone
+								<br>Deliveries 5PM - 10PM
+								<br>Deliveries in Grangemouth £2.00<br><br>01324 483098
+								<br>Join us on  
+								<a href="https://www.facebook.com/chinesefood00/">
+									Facebook</a>
+							</strong><br><br>
+								
+							<p4>
+								
+								<iframe 
+									src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8919.776861014318!2d-3.7231723!3d56.0196386!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa3d572b8dc0b5cb5!2sHappy+Inn!5e0!3m2!1sen!2suk!4v1563276179202!5m2!1sen!2suk" 
+									frameborder="0" style="border:0" height="100%" width="100%" allowfullscreen>
+								</iframe>
+								
+							</p4>
+					</div>
+		  </div>
+		<div class="footer w3-padding-10">
+			<p1>
+				<strong>
+					Follow us on:
+					<a id="location;" href="https://www.facebook.com/whisked.awayxo" target="_blank">
+						Facebook
+					</a>
+				</strong>
+			</p1>
+		</div>	
+	</body>
+						
+</html>
