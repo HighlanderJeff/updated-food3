@@ -7,6 +7,7 @@
    -moz-column-gap:5px;
    column-count:5;
    column-gap:5px;
+   transition: 1s;
 }
 .gallery img {
 	max-width:100%;
@@ -14,11 +15,6 @@
    margin-bottom:5px; /* to match column gap */
 }
 
-
-div.gallery{
-    transition: 1s;
-	
-}
 div.gallery img:hover{
     filter: grayscale(1000%);
     transform: scale(1.1);   
