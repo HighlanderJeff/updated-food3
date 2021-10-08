@@ -10,21 +10,7 @@ body, html{
 	
 }
 
-.footer {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	background-color: gray;
-	color: white;
-	text-align: left;
-	font-size: 70%;
-}
-		
-.footer a{
-	color:#ffdd42;
-	text-decoration: none;
-}
+
 body{
 	margin:0;
 	padding:0;
@@ -158,10 +144,7 @@ p{
 	body {
 		
 	}
-	.footer {
 	
-		font-size: 110%;
-	}
 	.gride-container {
 		grid-template-columns: repeat(4, 1fr);
 		grid-column-gap: 170px;
@@ -189,10 +172,7 @@ p{
 	body {
 		
 	}
-	.footer {
 	
-		font-size: 110%;
-	}
 	.gride-container {
 		grid-template-columns: repeat(4, 1fr);
 		grid-column-gap: 170px;
@@ -220,10 +200,7 @@ p{
 	body {
 		
 	}
-	.footer {
 	
-		font-size: 110%;
-	}
 	.gride-container {
 		grid-template-columns: repeat(4, 1fr);
 		grid-column-gap: 170px;
@@ -251,10 +228,7 @@ p{
 	body {
 		
 	}
-	.footer {
 	
-		font-size: 110%;
-	}
 	.gride-container {
 		grid-template-columns: repeat(4, 1fr);
 		grid-column-gap: 170px;
@@ -282,10 +256,7 @@ p{
 	body {
 		
 	}
-	.footer {
 	
-		font-size: 110%;
-	}
 	.gride-container {
 		grid-template-columns: repeat(4, 1fr);
 		grid-column-gap: 170px;
@@ -313,10 +284,7 @@ p{
 	body {
 		
 	}
-	.footer {
 	
-		font-size: 110%;
-	}
 	.gride-container {
 		grid-template-columns: repeat(4, 1fr);
 		grid-column-gap: 170px;
@@ -344,10 +312,7 @@ p{
 	body {
 		
 	}
-	.footer {
 	
-		font-size: 110%;
-	}
 	.gride-container {
 		grid-template-columns: repeat(4, 1fr);
 		grid-column-gap: 170px;
@@ -375,10 +340,7 @@ p{
 	body {
 		
 	}
-	.footer {
 	
-		font-size: 70%;
-	}
 	.gride-container {
 		grid-template-columns: repeat(3, 1fr);
 		grid-column-gap: 120px;
@@ -415,10 +377,7 @@ p{
 	body {
 		
 	}
-	.footer {
 	
-		font-size: 70%;
-	}
 	.gride-container {
 		grid-template-columns: repeat(2, 1fr);
 		grid-column-gap: 120px;
