@@ -14,7 +14,7 @@
 }
 
 div.gallery img:hover{
-    transition: 0.5s;
+    transition: 1s;
     filter: grayscale(1000%);
     transform: scale(1.1);   
 }

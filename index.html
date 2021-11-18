@@ -12,18 +12,67 @@
                 <script src="js/lightbox-plus-jquery.min.js"></script>
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<style>
-			.footer {
-			   position: fixed;
-			   left: 0;
-			   bottom: 0;
-			   
-			   width: 100%;
-			   background-color: gray;
-			   color: white;
-			   text-align: center;
-			}
+		
 			
-			}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 		</style>
 <!-- below imported from w3schools -->
 		<style>
@@ -130,27 +179,26 @@ img {vertical-align: middle;}
 <!-- above imported from w3schools -->
 	</head>
 	<body>
-	<!-- Links (sit on top) -->
 		<div class="w3-top">
-		  <div class="w3-row w3-padding w3-red">
-			<div class="w3-col s3" style="width:33%">
-			  <a href="#"  class="w3-button w3-block w3-red w3-mobile" >HOME</a>
-			</div>
-			<div class="w3-col s3" style="width:33%">
-			  <a href="#header"  class="w3-button w3-block w3-red w3-mobile" >MENU</a>
-			</div>
-			<div class="w3-col s3" style="width:33%">
-			  <a href="#contact"  class="w3-button w3-block w3-red w3-mobile" >CONTACT</a>
-			</div>
-			</div>
-		</div><br>
-	
-		<div style="text-align:center">
-			  <span class="dot" onclick="currentSlide(1)"></span> 
-			  <span class="dot" onclick="currentSlide(2)"></span> 
-			  <span class="dot" onclick="currentSlide(3)"></span> 
+			<div 
+				<div class="navbar">
+				  <a href="#">Home</a>
+				  <a href="#updates">Updates</a>
+				  <div class="dropdown">
+					<button class="dropbtn">Gallery 
+					  <i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+					  <a href="#gallery">Main Gallery</a>
+					  <a href="#">Link 2</a>
+					  <a href="#">Link 3</a>
+					</div>
+				  </div> 
+				</div>
 		</div>
-
+	
+	
+	
 		<script>
 			var slideIndex = 1;
 			showSlides(slideIndex);
@@ -182,75 +230,66 @@ img {vertical-align: middle;}
 	
 	
 	<!-- test section imported from w3schools ** end** -->
-		<div id="header" style="padding-top:30px;">
+		<div>
+			<h1>
+				<br>Welcome to Whisked AwayXo
+				<br><br>
+				<br>Delicious cupcakes & treats delivered straight to your door! 
+				<br>Order before 2pm, Monday - Friday, for next day delivery.
+			</h1>
+		</div>
+		<div id="updates" style="padding-top:30px;">
 				<h1>
-					<br>Welcome to the Happy Inn
-					<br>Our menu presents for all tastes Cantonese,
-					<br>Pekinese, Sze Chuan and traditional cuisine,
-					<br>we hope you enjoy your meal
+					<br>
+						<strong>
+							UPDATES
+						</strong>
+					<br>
 				</h1>
 		</div>
 		
 		
-				<!-- Contact/Area Container -->
-		<div class="w3-container" id="contact" style="padding-top:60px;padding-bottom:60px;">
+				<!-- gallery/Area Container -->
+		<div class="w3-container" id="gallery" style="padding-top:60px;padding-bottom:60px;">
 		  <div class="w3-content" style="max-width:700px">
-			<h3>WHERE TO FIND US</h3>
+		
 			<br>
-		<div class="gallery">        
-			<a href="img/cupcakes1.jpg" data-lightbox="mygallery" data-title="Whisked Awayxo"><img src="img/cupcakes1-small.jpg"></a><!--1-->
-			<a href="img/cupcakes2.jpg" data-lightbox="mygallery" data-title="Whisked Awayxo"><img src="img/cupcakes2-small.jpg"></a><!--2-->
-			<a href="img/cupcakes3.jpg" data-lightbox="mygallery" data-title="Whisked Awayxo"><img src="img/cupcakes3-small.jpg"></a><!--3-->
-			<a href="img/cupcakes4.jpg" data-lightbox="mygallery" data-title="Whisked Awayxo"><img src="img/cupcakes4-small.jpg"></a><!--4-->
-			<a href="img/cupcakes5.jpg" data-lightbox="mygallery" data-title="Whisked Awayxo"><img src="img/cupcakes5-small.jpg"></a><!--5-->
-			<a href="img/cupcakes6.jpg" data-lightbox="mygallery" data-title="Whisked Awayxo"><img src="img/cupcakes6-small.jpg"></a><!--6-->
-			<a href="img/cupcakes7.jpg" data-lightbox="mygallery" data-title="Whisked Awayxo"><img src="img/cupcakes7-small.jpg"></a><!--7-->
-			<a href="img/cupcakes8.jpg" data-lightbox="mygallery" data-title="Whisked Awayxo"><img src="img/cupcakes8-small.jpg" ></a><!--8-->
-			<a href="img/cupcakes9.jpg" data-lightbox="mygallery" data-title="Whisked Awayxo"><img src="img/cupcakes9-small.jpg"></a><!--9-->
-			<a href="img/cupcakes10.jpg" data-lightbox="mygallery" data-title="Whisked Awayxo"><img src="img/cupcakes10-small.jpg" ></a><!--10-->
-			<a href="img/cupcakes11.jpg" data-lightbox="mygallery" data-title="Whisked Awayxo"><img src="img/cupcakes11-small.jpg"></a><!--11-->
-			<a href="img/cupcakes12.jpg" data-lightbox="mygallery" data-title="Whisked Awayxo"><img src="img/cupcakes12-small.jpg" ></a><!--12-->
-			<a href="img/cupcakes13.jpg" data-lightbox="mygallery" data-title="Whisked Awayxo"><img src="img/cupcakes13-small.jpg"></a><!--13-->
-			<a href="img/cupcakes14.jpg" data-lightbox="mygallery" data-title="Whisked Awayxo"><img src="img/cupcakes14-small.jpg"></a><!--14-->
-			<a href="img/cupcakes15.jpg" data-lightbox="mygallery" data-title="Whisked Awayxo"><img src="img/cupcakes15-small.jpg"></a><!--15-->
-			<a href="img/cupcakes16.jpg" data-lightbox="mygallery" data-title="Whisked Awayxo"><img src="img/cupcakes16-small.jpg" ></a><!--16-->
-			<a href="img/cupcakes17.jpg" data-lightbox="mygallery" data-title="Whisked Awayxo"><img src="img/cupcakes17-small.jpg"></a><!--17-->
-			<a href="img/cupcakes18.jpg" data-lightbox="mygallery" data-title="Whisked Awayxo"><img src="img/cupcakes18-small.jpg"></a><!--18-->
-		</div>
-			 <br><br>
-			<strong>6 Union Road<br>Grangemouth
-								<br>FK3 8AB
-								<br>Orders taken by phone
-								<br>Deliveries 5PM - 10PM
-								<br>Deliveries in Grangemouth £2.00<br><br>01324 483098
-								<br>Join us on  
-								<a href="https://www.facebook.com/chinesefood00/">
-									Facebook</a>
-							</strong><br><br>
-								
-							<p4>
-								
-								<iframe 
-									src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8919.776861014318!2d-3.7231723!3d56.0196386!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa3d572b8dc0b5cb5!2sHappy+Inn!5e0!3m2!1sen!2suk!4v1563276179202!5m2!1sen!2suk" 
-									frameborder="0" style="border:0" height="100%" width="100%" allowfullscreen>
-								</iframe>
-								
-							</p4>
-					</div>
-		  </div>
+			<div class="gallery">        
+				<a href="img/cupcakes1.jpg" data-lightbox="mygallery"><img src="img/cupcakes1-small.jpg"></a><!--1-->
+				<a href="img/cupcakes2.jpg" data-lightbox="mygallery" ><img src="img/cupcakes2-small.jpg"></a><!--2-->
+				<a href="img/cupcakes3.jpg" data-lightbox="mygallery"><img src="img/cupcakes3-small.jpg"></a><!--3-->
+				<a href="img/cupcakes4.jpg" data-lightbox="mygallery"><img src="img/cupcakes4-small.jpg"></a><!--4-->
+				<a href="img/cupcakes5.jpg" data-lightbox="mygallery"><img src="img/cupcakes5-small.jpg"></a><!--5-->
+				<a href="img/cupcakes6.jpg" data-lightbox="mygallery"><img src="img/cupcakes6-small.jpg"></a><!--6-->
+				<a href="img/cupcakes7.jpg" data-lightbox="mygallery"><img src="img/cupcakes7-small.jpg"></a><!--7-->
+				<a href="img/cupcakes8.jpg" data-lightbox="mygallery"><img src="img/cupcakes8-small.jpg" ></a><!--8-->
+				<a href="img/cupcakes9.jpg" data-lightbox="mygallery"><img src="img/cupcakes9-small.jpg"></a><!--9-->
+				<a href="img/cupcakes10.jpg" data-lightbox="mygallery"><img src="img/cupcakes10-small.jpg" ></a><!--10-->
+				<a href="img/cupcakes11.jpg" data-lightbox="mygallery"><img src="img/cupcakes11-small.jpg"></a><!--11-->
+				<a href="img/cupcakes12.jpg" data-lightbox="mygallery"><img src="img/cupcakes12-small.jpg" ></a><!--12-->
+				<a href="img/cupcakes13.jpg" data-lightbox="mygallery"><img src="img/cupcakes13-small.jpg"></a><!--13-->
+				<a href="img/cupcakes14.jpg" data-lightbox="mygallery"><img src="img/cupcakes14-small.jpg"></a><!--14-->
+				<a href="img/cupcakes15.jpg" data-lightbox="mygallery"><img src="img/cupcakes15-small.jpg"></a><!--15-->
+				<a href="img/cupcakes16.jpg" data-lightbox="mygallery"><img src="img/cupcakes16-small.jpg" ></a><!--16-->
+				<a href="img/cupcakes17.jpg" data-lightbox="mygallery"><img src="img/cupcakes17-small.jpg"></a><!--17-->
+				<a href="img/cupcakes18.jpg" data-lightbox="mygallery"><img src="img/cupcakes18-small.jpg"></a><!--18-->
+			</div>
+			
 		<div class="footer w3-padding-10">
 			<p1>
-				<strong>
-					Follow us on:
-				</strong>
+			
 				<a id="location;" href="https://www.facebook.com/whisked.awayxo" target="_blank">
-						Facebook
+						<strong>
+							Facebook
+						</strong>
 				</a>
-				<strong>
-					or
-				</strong>
-				<a id="location;" href="https://www.instagram.com/explore/tags/cupcakes/" target"_blank">
-						Instagram
+						<strong>
+							-
+						</strong>
+				<a id="location;" href="https://www.instagram.com/explore/tags/cupcakes/" target="_blank">
+						<strong>
+							Instagram
+						</strong>
 				</a>
 				
 			</p1>
