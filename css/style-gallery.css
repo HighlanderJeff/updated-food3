@@ -1,3 +1,12 @@
+
+.gallery{
+	style=padding-top:60px;
+	padding-bottom:60px;
+	position:center
+}
+.w3-content{
+	style=max-width:700px;
+}
 .gallery {
    line-height:0;
    -webkit-column-count:5; /* split it into 5 columns */

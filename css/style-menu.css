@@ -1,4 +1,25 @@
-	/* Add a black background color to the top navigation */
+ 
+ .container {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  padding-top: 70%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  
+
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+ 
+ /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
   overflow: hidden;
@@ -17,7 +38,7 @@
 
 /* Add an active class to highlight the current page */
 .active {
-  background-color: #04AA6D;
+  background-color: #b26859;
   color: white;
 }
 
@@ -66,7 +87,7 @@
 
 /* Add a dark background on topnav links and the dropdown button on hover */
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #555;
+  background-color: red;
   color: white;
 }
 
@@ -113,4 +134,39 @@
     text-align: left;
   }
 }
-	
+ADVERTISEMENT
+Step 3) Add JavaScript:
+Example
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+Tip: Go to our CSS Dropdowns Tutorial to learn more about dropdowns.
+
+Tip: Go to our Clickable Dropdowns to learn more about clickable dropdowns
+
+Tip: Go to our CSS Navbar Tutorial to learn more about navbars.
+
+Tip: Go to our Side Navigation Tutorial to learn about how to create closable side navigations.
+
+
+NEW
+
+We just launched
+W3Schools videos
+Explore now
+COLOR PICKER
+colorpicker
+
+Get certified
+by completing
+a course today!
+w3schools CERTIFIED . 2021
+CODE GAME
+Code Game 
